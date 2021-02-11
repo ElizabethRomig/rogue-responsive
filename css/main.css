@@ -182,3 +182,47 @@ footer span {
   color: #77a466;
   font-size: 0.875em;
 }
+
+@media all and (min-width: 768px) {
+  .bottom-section {
+    border-top: 3px solid #77a466;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+  }
+
+  .section-two {
+    border-right: 3px solid #77a466;
+    border-left: 3px solid #77a466;
+    padding: 0 15px;
+    margin: 0 15px;
+  }
+
+  .section-one,
+  .section-two,
+  .section-three {
+    width: 33%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  header,
+  header nav ul {
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+  }
+
+  header {
+    padding: 60px 0 20px 0;
+  }
+
+  header h1 {
+    border-bottom: none;
+    width: 60%;
+    text-align: left;
+  }
+
+  nav {
+    width: 40%;
+    justify-content: flex-end;
+  }
+}
